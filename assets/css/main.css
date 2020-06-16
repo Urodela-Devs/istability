@@ -4,6 +4,8 @@ body,
   height: 100%;
 }
 
+body,
+html,
 h1,
 h2,
 h3,
@@ -36,10 +38,11 @@ p {
 }
 
 /* Navbar */
+
 @media only screen and (max-width: 2000px) and (min-width: 1025px) {
-    .navbar{
-        height: 85px !important;
-    }
+  .navbar {
+    height: 85px !important;
+  }
 }
 
 .nav-link {
@@ -53,7 +56,6 @@ p {
   color: rgb(79, 165, 235) !important;
   transition: 0.3s !important;
 }
-
 
 /*  Carousel  */
 
@@ -79,8 +81,8 @@ p {
   height: 80vh;
 }
 
-#ssvg{
-    transform: rotate(45deg);
+#ssvg {
+  transform: rotate(45deg);
 }
 
 .overlay h1 {
@@ -96,22 +98,22 @@ p {
 .overlay h1,
 .overlay p,
 .btn-discover,
-#ssvg{
+#ssvg {
   transition: 0.6s;
   transition-timing-function: ease-out;
   opacity: 1;
 }
- 
+
 @media only screen and (max-width: 767px) {
-    .overlay h1{
-        font-size: 35px !important;
-    }
+  .overlay h1 {
+    font-size: 35px !important;
+  }
 
-    .overlay p{
-        font-size: 15px !important;
-    }
+  .overlay p {
+    font-size: 15px !important;
+  }
 
-    .btn-discover{
-        font-size: 18px !important;
-    }
-} 
+  .btn-discover {
+    font-size: 18px !important;
+  }
+}
