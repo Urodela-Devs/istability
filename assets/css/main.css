@@ -18,7 +18,7 @@ h5,
 a,
 i,
 p,
-.About .card-body{
+.About .card-body {
   font-family: "Roboto", sans-serif !important;
 }
 
@@ -27,18 +27,19 @@ p,
   color: white !important;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: rgb(164, 213, 253);
 }
 
 /* --------------------------------------------------------- */
 /* Buttons */
 /* --------------------------------------------------------- */
-.btn-discover {
+.btn-discover,
+.btn-info {
   background-color: #139fe6 !important;
   font-size: 20px !important;
   width: 200px;
@@ -47,7 +48,8 @@ p,
   border-radius: 50px !important;
 }
 
-.btn-discover:hover {
+.btn-discover:hover,
+.btn-info:hover {
   background-color: #2babeb !important;
   transition: 0.3s;
 }
@@ -73,7 +75,7 @@ p,
   width: 200px;
   height: 40px;
   border-radius: 50px !important;
-  border: none !important
+  border: none !important;
 }
 
 .btn-minimal1:hover,
@@ -82,19 +84,25 @@ p,
   border: none !important;
 }
 
-.btn-minimal1:hover{
+.btn-minimal1:hover {
   background: #fad5c8 !important;
   transition: 0.3s;
 }
 
-.btn-minimal2:hover{
+.btn-minimal2:hover {
   background: #d6d6d6 !important;
   transition: 0.3s;
 }
 
-.btn-minimal3:hover{
+.btn-minimal3:hover {
   background: #646464 !important;
   transition: 0.3s;
+}
+
+.btn-info {
+  width: 120px;
+  font-size: 17px !important;
+  height: 38px;
 }
 
 /* --------------------------------------------------------- */
@@ -247,7 +255,7 @@ p,
 /* --------------------------------------------------------- */
 
 .About {
-  height: 70vh;
+  /* height: 70vh; */
   padding-top: 80px;
 }
 
@@ -262,12 +270,12 @@ p,
 
 .btn-minimal1,
 .btn-minimal2,
-.btn-minimal3{
+.btn-minimal3 {
   margin-left: 100px;
   margin-top: 20px;
 }
 
-.About .card-body{
+.About .card-body {
   line-height: 24px !important;
   font-style: italic;
   font-size: 16px;
@@ -276,7 +284,6 @@ p,
 
 @media only screen and (max-width: 800px) {
   .About {
-    height: 100vh;
     padding-top: 70px;
     text-align: center;
   }
@@ -285,8 +292,65 @@ p,
     width: 310px;
     margin-top: 30px;
   }
+
+  .btn-minimal1,
+  .btn-minimal2,
+  .btn-minimal3 {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
 
 /* --------------------------------------------------------- */
-/* Politics */
+/* Services */
 /* --------------------------------------------------------- */
+
+.Services {
+  background: #f2f7f8;
+  padding-bottom: 80px;
+}
+
+.card,
+.card img {
+  border-radius: 30px 30px 0 0 !important;
+}
+
+/* --------------------------------------------------------- */
+/* Sticky Banner */
+/* --------------------------------------------------------- */
+.banner {
+  /* background-image: url("/images/bg2.jpg"); */
+  height: 240px;
+  position: static;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.banner--filter {
+  /* background-color: #13a0e6a4 !important; */
+  background-color: #0d95debb;
+  width: 100%;
+  height: 100%;
+}
+
+.banner h3 {
+  font-weight: 400 !important;
+  text-transform: uppercase;
+}
+
+.banner h4 {
+  font-weight: 350 !important ;
+}
+
+.banner .row {
+  height: 100%;
+  align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .banner {
+    height: fit-content;
+  }
+}
