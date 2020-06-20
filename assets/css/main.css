@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+}
+
 html,
 body,
 .container {
@@ -13,7 +17,8 @@ h4,
 h5,
 a,
 i,
-p {
+p,
+.About .card-body{
   font-family: "Roboto", sans-serif !important;
 }
 
@@ -22,7 +27,17 @@ p {
   color: white !important;
 }
 
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: rgb(164, 213, 253);
+}
+
+/* --------------------------------------------------------- */
 /* Buttons */
+/* --------------------------------------------------------- */
 .btn-discover {
   background-color: #139fe6 !important;
   font-size: 20px !important;
@@ -37,12 +52,64 @@ p {
   transition: 0.3s;
 }
 
+.btn-minimal1 {
+  background: #ffe8df !important;
+}
+
+.btn-minimal2 {
+  background: #f0f0f0 !important;
+}
+
+.btn-minimal3 {
+  background: #888888 !important;
+  color: white !important;
+}
+
+.btn-minimal1,
+.btn-minimal2,
+.btn-minimal3 {
+  font-weight: 600 !important;
+  font-size: 20px;
+  width: 200px;
+  height: 40px;
+  border-radius: 50px !important;
+  border: none !important
+}
+
+.btn-minimal1:hover,
+.btn-minimal2:hover,
+.btn-minimal3:hover {
+  border: none !important;
+}
+
+.btn-minimal1:hover{
+  background: #fad5c8 !important;
+  transition: 0.3s;
+}
+
+.btn-minimal2:hover{
+  background: #d6d6d6 !important;
+  transition: 0.3s;
+}
+
+.btn-minimal3:hover{
+  background: #646464 !important;
+  transition: 0.3s;
+}
+
+/* --------------------------------------------------------- */
 /* Navbar */
+/* --------------------------------------------------------- */
 
 @media only screen and (max-width: 2000px) and (min-width: 1025px) {
   .navbar {
     height: 85px !important;
   }
+}
+
+#logo {
+  width: 220px;
+  height: auto;
 }
 
 .nav-link {
@@ -57,7 +124,9 @@ p {
   transition: 0.3s !important;
 }
 
+/* --------------------------------------------------------- */
 /*  Carousel  */
+/* --------------------------------------------------------- */
 
 #main .carousel-inner img {
   max-height: 100%;
@@ -74,15 +143,19 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.22);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #carousel img {
-  height: 80vh;
+  height: 100vh;
 }
 
 #ssvg {
   transform: rotate(45deg);
+}
+
+.overlay {
+  position: relative;
 }
 
 .overlay h1 {
@@ -104,7 +177,11 @@ p {
   opacity: 1;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 800px) {
+  #carousel img {
+    height: 80vh;
+  }
+
   .overlay h1 {
     font-size: 35px !important;
   }
@@ -117,3 +194,99 @@ p {
     font-size: 18px !important;
   }
 }
+/* --------------------------------------------------------- */
+/* Valores - Values */
+/* --------------------------------------------------------- */
+
+.us1 {
+  height: 220px;
+  width: 100%;
+  background: #f2f7f8;
+  color: black;
+  margin-top: -70px;
+}
+
+.values,
+.vbox {
+  height: 100%;
+}
+
+.container .values {
+  height: 200px;
+}
+
+.values {
+  display: flex;
+  justify-content: center;
+  z-index: 9999 !important;
+}
+
+.values h4 {
+  font-weight: 400 !important;
+  font-size: 24px !important;
+}
+
+.vbox {
+  background: #ffffff;
+  padding: 40px 0 0px 0;
+  border-right: 1px solid rgb(228, 226, 226);
+}
+
+@media only screen and (max-width: 800px) {
+  .us1 {
+    height: 80vh;
+  }
+
+  .vbox {
+    width: 85vw !important;
+    border-top: 1px solid rgb(156, 154, 154);
+  }
+}
+/* --------------------------------------------------------- */
+/* About */
+/* --------------------------------------------------------- */
+
+.About {
+  height: 70vh;
+  padding-top: 80px;
+}
+
+.About p {
+  line-height: 30px;
+}
+
+#bg2 {
+  width: 430px;
+  height: auto;
+}
+
+.btn-minimal1,
+.btn-minimal2,
+.btn-minimal3{
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+.About .card-body{
+  line-height: 24px !important;
+  font-style: italic;
+  font-size: 16px;
+  border: none !important;
+}
+
+@media only screen and (max-width: 800px) {
+  .About {
+    height: 100vh;
+    padding-top: 70px;
+    text-align: center;
+  }
+
+  #bg2 {
+    width: 310px;
+    margin-top: 30px;
+  }
+}
+
+/* --------------------------------------------------------- */
+/* Politics */
+/* --------------------------------------------------------- */
