@@ -202,6 +202,113 @@ p,
     font-size: 18px !important;
   }
 }
+
+/* --------------------------------------------------------- */
+/*  Social Media  */
+/* --------------------------------------------------------- */
+
+.social--label{
+  display: grid;
+  grid-template-columns: repeat(1, 5px)
+  grid-template-rows: repeat(6, 5px);
+  grid-template-areas:  "text"
+                        "text"
+                        "text"
+                        "text"
+                        "text"
+                        "text";
+  position: fixed;
+  width: 28px;
+  height: 119px;
+  margin: 0;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  margin-top: 170px;
+  padding: 7px 5px 10px 11px;
+  background-color: rgb(131, 131, 131);
+  border-radius: 20px 0 0 20px;
+  background: linear-gradient(90deg, #556f7c, #334550 25%, #0d95debb);
+  opacity: 60%;
+  -webkit-transition: ease-in-out 0.7s;
+  -moz-transition: ease-in-out 0.7s;
+  -ms-transition: ease-in-out 0.7s;
+  -o-transition: ease-in-out 0.7s;
+}
+
+@media only screen and (max-width: 800px) {
+  .social--label{
+    opacity: 40%;
+  }
+}
+
+.social--label p{
+  color: white;
+  font-weight: 600;
+  font-size: 0.8em;
+  height: 1px;
+}
+
+.social--media__link1 img,
+.social--media__link2 img,
+.social--media__link3 img,
+.social--media__link4 img,
+.social--media__link5 img{
+  width: 30px;
+  display: none;
+}
+
+.social--media__arrow img{
+  width: 30px;
+}
+
+.social--media {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas:  "social--media__arrow social--media__link1 social--media__link2 social--media__link3 social--media__link4 social--media__link5";
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  margin-top: 300px;
+  padding: 7px 5px 15px 10px;
+  background-color: rgb(131, 131, 131);
+  border-radius: 20px 0 0 20px;
+  background: linear-gradient(90deg, #556f7c, #334550 25%, #0d95debb);
+  opacity: 60%;
+  -webkit-transition: ease-in-out 0.7s;
+  -moz-transition: ease-in-out 0.7s;
+  -ms-transition: ease-in-out 0.7s;
+  -o-transition: ease-in-out 0.7s;
+}
+
+  @media only screen and (max-width: 800px) {
+    .social--media{
+      opacity: 40%;
+    }
+  }
+    .social:hover .social--media{
+      width: 450px;
+      opacity: 100%;
+    }
+
+      @media only screen and (max-width: 800px) {
+        .social:hover .social--media{
+          width: 90vw;
+        }
+      }
+
+        .social:hover .social--media__link1 img,
+        .social:hover .social--media__link2 img,
+        .social:hover .social--media__link3 img,
+        .social:hover .social--media__link4 img,
+        .social:hover .social--media__link5 img{
+          display: block;
+        }
+
 /* --------------------------------------------------------- */
 /* Valores - Values */
 /* --------------------------------------------------------- */
