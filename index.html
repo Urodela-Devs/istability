@@ -17,7 +17,28 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <title>Istability</title>
+    <title>ISTABILITY PHARMA</title>
+
+        <!-- Main JS -->
+        <script src="assets/js/main.js"></script>
+
+        <!-- Scroll -->
+        <script src="assets/js/smooth-scroll.polyfills.min.js"></script>
+
+        <script>
+             var scroll = new SmoothScroll('a[href*="#"]', {
+                // Function. Custom easing pattern
+                // If this is set to anything other than null, will override the easing option above
+                customEasing: function (time) {
+
+                    // return <your formulate with time as a multiplier>
+
+                    // Example: easeInOut Quad
+                    return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+
+                }
+            });
+        </script>
   </head>
   <body>
 
@@ -31,19 +52,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#">Inicio<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">¿Quiénes somos?</a>
+                        <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#about">¿Quiénes somos?</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Servicios</a>
+                      <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#services">Servicios</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Contacto</a>
+                      <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#contact">Contacto</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Facturar</a>
+                      <a class="nav-link"  href="/factura.html">Facturar</a>
                     </li>
                     <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -59,7 +80,7 @@
                   </ul>
                   <ul class="navbar-nav ml-auto">
                       <li class="nav-item active">
-                          <a class="nav-link" href="#"><img src="/assets/fontawesome/svgs/solid/phone-alt.svg" alt="whatsapp" style="width: 18px;" class="mr-2"> Contactar <b class="ml-2">+52 771 - 128 - 4653 </b></a>
+                          <a class="nav-link" href="tel:7711284653"><img src="/assets/fontawesome/svgs/solid/phone-alt.svg" alt="whatsapp" style="width: 18px;" class="mr-2"> Contactar <b class="ml-2">+52 771 - 128 - 4653 </b></a>
                       </li>
                   </ul>
               </div>
@@ -96,9 +117,9 @@
                 <div class="row text-center">
                   <div class="col-lg-12 offset-lg-0">
                     <img id="ssvg" src="/images/tt.svg" style="height:150px; width: auto;" class=" mt-lg-5 mt-md-5 mt-sm-4 mt-4" alt="">
-                    <h1 class=" mt-lg-3 mt-md-3 mt-sm-2 mt-2">Istability Pharma</h1>
+                    <h1 class=" mt-lg-3 mt-md-3 mt-sm-2 mt-2">ISTABILITY PHARMA</h1>
                     <p class="mt-lg-4 mt-md-3 mt-sm-2 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quia molestias cumque vitae veritatis mollitia nihil molestiae, fuga velit aliquam error inventore doloribus fugit. Ab blanditiis illo facilis aut totam.</p>
-                  <a>
+                  <a href="#services">
                       <button type="button" class="btn btn-discover mt-4">
                         Descubrir
                       </button>
@@ -134,7 +155,7 @@
               <a href=""> <img src="/assets/fontawesome/svgs/brands/facebook.svg" class="" alt=""> </a>
             </div>
             <div class="social--media__link3" style="padding-top: 3px;">
-              <a href=""> <img src="/assets/fontawesome/svgs/brands/twitter.svg" class="" alt=""></a>
+              <a href=""> <img src="/assets/fontawesome/svgs/solid/mail-bulk.svg" class="" alt=""></a>
             </div>
             <div class="social--media__link4">
               <a href=""> <img src="/assets/fontawesome/svgs/brands/instagram.svg" class="" alt=""></a>
@@ -182,7 +203,7 @@
         </div>
         <div class="row text-center pb-4">
           <div class="col-lg-12 offset-lg-0 col-md-12 offset-md-0 col-sm-12 offset-sm-0">
-            <button class="btn btn-minimal1" type="button" data-toggle="collapse" data-target="#mision" aria-expanded="false" aria-controls="collapseExample">
+            <button class="btn btn-minimal1" style="margin-left: 0 !important;" type="button" data-toggle="collapse" data-target="#mision" aria-expanded="false" aria-controls="collapseExample">
               Misión
             </button>
             <button class="btn btn-minimal2" type="button" data-toggle="collapse" data-target="#vision" aria-expanded="false" aria-controls="collapseExample">
@@ -274,7 +295,7 @@
               </div>
               <div class="col-lg-4 offset-lg-0 col-md-4 offset-md-0 col-sm-10 offset-sm-1 col-10 offset-1 pt-5 ">
                 <img src="/images/PastelMercado.png" style="width: 40%;" class="" alt="">
-                <h4>Istability Pharma <br> representa el 11% <br> del mercado nacional</h4>
+                <h4>ISTABILITY PHARMA <br> representa el 11% <br> del mercado nacional</h4>
               </div>
             </div>
           </div>
@@ -324,7 +345,7 @@
       </section>
     <!-- / Contacto -->
     <!-- MAP -->
-    <iframe style="width: 100%; height: 40vh; box-sizing: content-box;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240863.68495498938!2d-99.28369829694304!3d19.391003838663046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0026db097507%3A0x54061076265ee841!2sCiudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1593449575971!5m2!1ses!2smx"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <iframe style="width: 100%; height: 40vh; box-sizing: content-box;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.040506988931!2d-99.07105288509294!3d19.453820286872194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fb90b1d14f9d%3A0xc8b944e1d4553e9c!2sAv.%20611%20128%2C%20San%20Juan%20de%20Arag%C3%B3n%20III%20Secc%2C%20Gustavo%20A.%20Madero%2C%2007970%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1593452602476!5m2!1ses!2smx" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     <!-- / MAP -->
    <!-- Sticky Banner 2 -->
    <section class="banner2" style="background-image: url('/images/farma4.jpg');">
@@ -335,7 +356,7 @@
               <p class="pb-2" style="font-style: oblique; font-weight: 600;">
                 Solicita una consulta que se ajuste a tus necesidades.
               </p>
-              <a href=""><button class="btn btn-wha">
+              <a href="https://wa.link/a7nuq1" target="_blank"><button class="btn btn-wha">
                 COTIZA AQUÍ
               </button></a>
               </div>
@@ -350,25 +371,25 @@
        <div class="row align-items-center text-center">
          <div class="col-md-6">
            <p  style="border-left: 1px solid white; padding-left: 10px;">
-             Dirección: 
-             Clementinaborough, Wildermanmouth, Green, 07752.
+              Av. 611 No. 128 Col. San Juan de Aragón 3ra Secc. <br> Delegación Gustavo A. Madero C.P. 07970 CDMX
            </p>
            <p  style="border-left: 1px solid rgb(71, 203, 243); padding-left: 10px;">
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora animi.
+              Ventas: +52 771 - 128 - 4653 <br>
            </p>
          </div>
          <div class="col-md-6">
            <p  style="border-left: 1px solid rgb(92, 236, 181); padding-left: 10px;">
-             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi.
+             Atención al cliente: <br>
+             fmeneses@istability.com.mx
            </p>
            <p style="border-left: 1px solid rgb(250, 143, 143); padding-left: 10px;">
-             Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
            </p>
          </div>
        </div>
        <div class="row text-center">
          <div class="col-md-12 pt-5">
-          ® Istability Pharma, todos los derechos reservados.
+          ® ISTABILITY PHARMA, todos los derechos reservados.
          </div>
        </div>
     </div>

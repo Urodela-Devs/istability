@@ -253,7 +253,7 @@ p,
   }
 
   .overlay h1 {
-    font-size: 35px !important;
+    font-size: 33px !important;
   }
 
   .overlay p {
@@ -609,6 +609,15 @@ p,
 /* Services */
 /* --------------------------------------------------------- */
 
+#services::before{
+  margin-top: 200px;
+}
+
+#services{
+  -webkit-background-clip: content-box;
+  background-clip: content-box;
+}
+
 .Services {
   background: #f2f7f8;
   padding-bottom: 80px;
@@ -757,3 +766,8 @@ p,
   background-color: black;
   color: white;
 }
+
+/* --------------------------------------------------------- */
+/* Responsive Landscape */
+/* --------------------------------------------------------- */
+
