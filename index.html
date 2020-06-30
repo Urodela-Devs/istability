@@ -1,72 +1,81 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/main.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- JS -->
-    <script src="assets/js/main.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <!-- JS -->
+  <script src="assets/js/main.js"></script>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
 
-    <title>ISTABILITY PHARMA</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-        <!-- Main JS -->
-        <script src="assets/js/main.js"></script>
+  <title>ISTABILITY PHARMA</title>
 
-        <!-- Scroll -->
-        <script src="assets/js/smooth-scroll.polyfills.min.js"></script>
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
 
-        <script>
-             var scroll = new SmoothScroll('a[href*="#"]', {
-                // Function. Custom easing pattern
-                // If this is set to anything other than null, will override the easing option above
-                customEasing: function (time) {
+  <!-- Scroll -->
+  <script src="assets/js/smooth-scroll.polyfills.min.js"></script>
 
-                    // return <your formulate with time as a multiplier>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      // Function. Custom easing pattern
+      // If this is set to anything other than null, will override the easing option above
+      customEasing: function (time) {
 
-                    // Example: easeInOut Quad
-                    return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+        // return <your formulate with time as a multiplier>
 
-                }
-            });
-        </script>
-  </head>
-  <body>
+        // Example: easeInOut Quad
+        return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
 
-      <!-- Navbar -->
-      <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-          <div class="container">
-              <a class="navbar-brand" href="#"> <img src="images/logotipo 2.png" id="logo" alt="logotipo"> </a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#">Inicio<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#about">¿Quiénes somos?</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#services">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#contact">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link"  href="factura.html">Facturar</a>
-                    </li>
-                    <!-- <li class="nav-item dropdown">
+      }
+    });
+  </script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"> <img src="images/logotipo 2.png" id="logo" alt="logotipo"> </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#">Inicio<span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#about">¿Quiénes
+              somos?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show"
+              href="#services">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#contact">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="factura.html">Facturar</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Dropdown
                         </a>
@@ -77,329 +86,386 @@
                         <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </li> -->
-                  </ul>
-                  <ul class="navbar-nav ml-auto">
-                      <li class="nav-item active">
-                          <a class="nav-link" href="tel:7711284653"><img src="assets/fontawesome/svgs/solid/phone-alt.svg" alt="whatsapp" style="width: 18px;" class="mr-2"> Contactar <b class="ml-2">+52 771 - 128 - 4653 </b></a>
-                      </li>
-                  </ul>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="tel:7711284653"><img src="assets/fontawesome/svgs/solid/phone-alt.svg"
+                alt="whatsapp" style="width: 18px;" class="mr-2"> Contactar <b class="ml-2">+52 771 - 128 - 4653
+              </b></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </div>
+  <!-- / Navbar -->
+  <!-- Carousel -->
+  <main id="main">
+    <div id="carousel" class="carousel slide" data-ride="carousel" data-pause="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/bg1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/bg5.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/bg3.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/bg4.jpg" class="d-block w-100" alt="...">
+        </div>
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <div class="overlay">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-lg-12 offset-lg-0">
+                <img id="ssvg" src="images/tt.svg" style="height:150px; width: auto;"
+                  class=" mt-lg-5 mt-md-5 mt-sm-4 mt-4" alt="">
+                <h1 class=" mt-lg-3 mt-md-3 mt-sm-2 mt-2">ISTABILITY PHARMA</h1>
+                <p class="mt-lg-4 mt-md-3 mt-sm-2 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                  quia molestias cumque vitae veritatis mollitia nihil molestiae, fuga velit aliquam error inventore
+                  doloribus fugit. Ab blanditiis illo facilis aut totam.</p>
+                <a href="#services">
+                  <button type="button" class="btn btn-discover mt-4">
+                    Descubrir
+                  </button>
+                </a>
               </div>
             </div>
-        </nav>
-      </div>
-      <!-- / Navbar -->
-      <!-- Carousel -->
-     <main id="main">
-        <div id="carousel" class="carousel slide" data-ride="carousel" data-pause="false">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images/bg1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/bg5.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/bg3.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/bg4.jpg" class="d-block w-100" alt="...">
-            </div>
-            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-            <div class="overlay">
-              <div class="container">
-                <div class="row text-center">
-                  <div class="col-lg-12 offset-lg-0">
-                    <img id="ssvg" src="images/tt.svg" style="height:150px; width: auto;" class=" mt-lg-5 mt-md-5 mt-sm-4 mt-4" alt="">
-                    <h1 class=" mt-lg-3 mt-md-3 mt-sm-2 mt-2">ISTABILITY PHARMA</h1>
-                    <p class="mt-lg-4 mt-md-3 mt-sm-2 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quia molestias cumque vitae veritatis mollitia nihil molestiae, fuga velit aliquam error inventore doloribus fugit. Ab blanditiis illo facilis aut totam.</p>
-                  <a href="#services">
-                      <button type="button" class="btn btn-discover mt-4">
-                        Descubrir
-                      </button>
-                  </a>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
-        </div>
-      </main>
-    <!-- / Carousel -->
-    <!-- Social media -->
-      <div class="social">
-        <div class="social--label">
-          <p class="text">C</p>
-          <p class="text">O</p>
-          <p class="text">N</p>
-          <p class="text">T</p>
-          <p class="text">A</p>
-          <p class="text">C</p>
-          <p class="text">T</p>
-          <p class="text">O</p>
-        </div>
-        <div class="social--media">
-          <div class="social--media__arrow" style="margin-top: 3px;">
-            <img src="assets/fontawesome/svgs/regular/arrow-alt-circle-left.svg" alt="" class="">
-          </div>
-            <div class="social--media__link1">
-              <a href="https://wa.link/a7nuq1" target="_blank">  <img src="assets/fontawesome/svgs/brands/whatsapp.svg" class="" alt=""> </a >
-            </div>
-            <div class="social--media__link2" style="padding-top: 2px;">
-              <a href=""> <img src="assets/fontawesome/svgs/brands/facebook.svg" class="" alt=""> </a>
-            </div>
-            <div class="social--media__link3" style="padding-top: 3px;">
-              <a href=""> <img src="assets/fontawesome/svgs/solid/mail-bulk.svg" class="" alt=""></a>
-            </div>
-            <div class="social--media__link4">
-              <a href=""> <img src="assets/fontawesome/svgs/brands/instagram.svg" class="" alt=""></a>
-            </div>
-            <div class="social--media__link5">
-              <a href=""><img src="assets/fontawesome/svgs/brands/linkedin-in.svg" class="" alt=""></a>
-            </div>
         </div>
       </div>
-    <!-- / Social media -->
-    <!-- Values -->
-      <section class="us1">
-        <div class="container">
-          <div class="values row text-center align-items-center">
-            <div class="vbox col-lg-4 offset-lg-0">
-              <img src="images/compromiso.png" class="" style="height: 55px; width: auto;" alt="">
-              <h4 class="pt-3">Compromiso</h4>
-            </div>
-            <div class="vbox col-lg-4 offset-lg-0 style="border-right: 1px solid rgb(0, 0, 0, .40);"">
-              <img src="images/seguridad.png" class="" style="height: 55px; width: auto;" alt="">
-              <h4 class="pt-3">Seguridad</h4>
-            </div>
-            <div class="vbox col-lg-4 offset-lg-0 style="border-right: 1px solid rgb(0, 0, 0, .40);"">
-              <img src="images/amor.png" class="" style="height: 55px; width: auto;" alt="">
-              <h4 class="pt-3">Pasión por nuestro trabajo</h4>
-            </div>
-          </div>
+    </div>
+  </main>
+  <!-- / Carousel -->
+  <!-- Social media -->
+  <div class="social">
+    <div class="social--label">
+      <p class="text">C</p>
+      <p class="text">O</p>
+      <p class="text">N</p>
+      <p class="text">T</p>
+      <p class="text">A</p>
+      <p class="text">C</p>
+      <p class="text">T</p>
+      <p class="text">O</p>
+    </div>
+    <div class="social--media">
+      <div class="social--media__arrow" style="margin-top: 3px;">
+        <img src="assets/fontawesome/svgs/regular/arrow-alt-circle-left.svg" alt="" class="">
+      </div>
+      <div class="social--media__link1">
+        <a href="https://wa.link/a7nuq1" target="_blank"> <img src="assets/fontawesome/svgs/brands/whatsapp.svg"
+            class="" alt=""> </a>
+      </div>
+      <div class="social--media__link2" style="padding-top: 2px;">
+        <a href=""> <img src="assets/fontawesome/svgs/brands/facebook.svg" class="" alt=""> </a>
+      </div>
+      <div class="social--media__link3" style="padding-top: 3px;">
+        <a href=""> <img src="assets/fontawesome/svgs/solid/mail-bulk.svg" class="" alt=""></a>
+      </div>
+      <div class="social--media__link4">
+        <a href=""> <img src="assets/fontawesome/svgs/brands/instagram.svg" class="" alt=""></a>
+      </div>
+      <div class="social--media__link5">
+        <a href=""><img src="assets/fontawesome/svgs/brands/linkedin-in.svg" class="" alt=""></a>
+      </div>
+    </div>
+  </div>
+  <!-- / Social media -->
+  <!-- Values -->
+  <section class="us1">
+    <div class="container">
+      <div class="values row text-center align-items-center">
+        <div class="vbox col-lg-4 offset-lg-0">
+          <img src="images/compromiso.png" class="" style="height: 55px; width: auto;" alt="">
+          <h4 class="pt-3">Compromiso</h4>
         </div>
-      </section>
-    <!-- / Values -->
-    <!-- About us -->
-    <section class="About" id="about">
-      <div class="container">
-        <div class="row align-items-ceter">
-          <div class="col-lg-5 offset-lg-1 col-md-6 offset-md-0 col-sm-8 offset-sm-2">
-            <h3>¿Quienes somos?</h3>
-            <p class="mt-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto repudiandae rem at itaque deserunt impedit quia consectetur? Numquam cupiditate molestiae sint repudiandae quae minus assumenda. Autem impedit dicta doloremque quaerat.
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum impedit sapiente quaerat sequi.
-            </p>
-          </div>
-          <div class="col-lg-4 offset-lg-0 col-md-4 offset-md-0 col-sm-6 offset-sm-3 col-12 offset-0">
-            <img id="bg2" src="images/bg2.jpg" alt="" class="shadow-lg p-3 mb-5 rounded">
-          </div>
+        <div class="vbox col-lg-4 offset-lg-0 style=" border-right: 1px solid rgb(0, 0, 0, .40);"">
+          <img src="images/seguridad.png" class="" style="height: 55px; width: auto;" alt="">
+          <h4 class="pt-3">Seguridad</h4>
         </div>
-        <div class="row text-center pb-4">
-          <div class="col-lg-12 offset-lg-0 col-md-12 offset-md-0 col-sm-12 offset-sm-0">
-            <button class="btn btn-minimal1" style="margin-left: 0 !important;" type="button" data-toggle="collapse" data-target="#mision" aria-expanded="false" aria-controls="collapseExample">
-              Misión
-            </button>
-            <button class="btn btn-minimal2" type="button" data-toggle="collapse" data-target="#vision" aria-expanded="false" aria-controls="collapseExample">
-              Visión
-            </button>
-            <button class="btn btn-minimal3" type="button" data-toggle="collapse" data-target="#QASP" aria-expanded="false" aria-controls="collapseExample">
-              Política de calidad
-            </button>
+        <div class="vbox col-lg-4 offset-lg-0 style=" border-right: 1px solid rgb(0, 0, 0, .40);"">
+          <img src="images/amor.png" class="" style="height: 55px; width: auto;" alt="">
+          <h4 class="pt-3">Pasión por nuestro trabajo</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / Values -->
+  <!-- About us -->
+  <section class="About" id="about">
+    <div class="container">
+      <div class="row align-items-ceter">
+        <div class="col-lg-5 offset-lg-1 col-md-6 offset-md-0 col-sm-8 offset-sm-2">
+          <h3>¿Quienes somos?</h3>
+          <p class="mt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto repudiandae rem at itaque deserunt impedit
+            quia consectetur? Numquam cupiditate molestiae sint repudiandae quae minus assumenda. Autem impedit dicta
+            doloremque quaerat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum impedit sapiente quaerat sequi.
+          </p>
+        </div>
+        <div class="col-lg-4 offset-lg-0 col-md-4 offset-md-0 col-sm-6 offset-sm-3 col-12 offset-0">
+          <img id="bg2" src="images/bg2.jpg" alt="" class="shadow-lg p-3 mb-5 rounded">
+        </div>
+      </div>
+      <div class="row text-center pb-4">
+        <div class="col-lg-12 offset-lg-0 col-md-12 offset-md-0 col-sm-12 offset-sm-0">
+          <button class="btn btn-minimal1" style="margin-left: 0 !important;" type="button" data-toggle="collapse"
+            data-target="#mision" aria-expanded="false" aria-controls="collapseExample">
+            Misión
+          </button>
+          <button class="btn btn-minimal2" type="button" data-toggle="collapse" data-target="#vision"
+            aria-expanded="false" aria-controls="collapseExample">
+            Visión
+          </button>
+          <button class="btn btn-minimal3" type="button" data-toggle="collapse" data-target="#QASP"
+            aria-expanded="false" aria-controls="collapseExample">
+            Política de calidad
+          </button>
           </p>
           <div class="collapse" id="mision">
             <div class="card card-body">
               <img src="images/mision.png" class="mb-3" style="width: 60px;" alt="">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim
+              keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
             </div>
           </div>
           <div class="collapse" id="vision">
             <div class="card card-body">
               <img src="images/vision.png" class="mb-3" style="width: 60px;" alt="">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim
+              keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
             </div>
           </div>
           <div class="collapse" id="QASP">
             <div class="card card-body">
               <img src="images/pqa.png" class="mb-3" style="width: 60px;" alt="">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim
+              keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
             </div>
           </div>
-        </div>
         </div>
       </div>
-    </section>
-    <!-- / About us -->
-    <!-- Services -->
-      <section class="Services" id="services">
-        <div class="container">
-          <div class="row align-items-center text-center pt-5">
-            <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-6 offset-sm-3 col-12 offset-0">
-              <h3>Servicios</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque blanditiis, harum beatae eum.</p>
-            </div>
-          </div>
-          <div class="row align-items-center text-center">
-            <div class="col-lg-4 offset-lg-0 col-md-6 offset-md-0 col-sm-8 offset-sm-2 col-12 offset-0 pt-5">
-              <div class="card shadow-lg p-3 rounded" style="width: 18rem; margin: auto;">
-                <img src="images/bg6.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-info">Informes</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 offset-lg-0 col-md-6 offset-md-0 col-sm-8 offset-sm-2 col-12 offset-0 pt-5">
-              <div class="card shadow-lg p-3 rounded" style="width: 18rem; margin: auto;">
-                <img src="images/bg6.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-info">Informes</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 offset-lg-0 col-md-6 offset-md-0 col-sm-8 offset-sm-2 col-12 offset-0 pt-5">
-              <div class="card shadow-lg p-3 rounded" style="width: 18rem; margin: auto;">
-                <img src="images/bg6.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-info">Informes</a>
-                </div>
-              </div>
+    </div>
+  </section>
+  <!-- / About us -->
+  <!-- Services -->
+  <section class="Services" id="services">
+    <div class="container">
+      <div class="row align-items-center text-center pt-5">
+        <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-6 offset-sm-3 col-12 offset-0">
+          <h3>Servicios</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque blanditiis, harum beatae eum.</p>
+        </div>
+      </div>
+      <div class="row align-items-center text-center">
+        <div class="col-lg-4 offset-lg-0 col-md-6 offset-md-0 col-sm-8 offset-sm-2 col-12 offset-0 pt-5">
+          <div class="card shadow-lg p-3 rounded" style="width: 18rem; margin: auto;">
+            <img src="images/bg6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-info">Informes</a>
             </div>
           </div>
         </div>
-      </section>
-    <!-- / Services -->
-   <!-- Sticky Banner -->
-    <section class="banner" style="background-image: url('images/farma6.jpg');">
-     <div class="banner--filter">
-          <div class="container">
-            <div class="row align-items-center text-center pb-4">
-              <div class="col-lg-4 offset-lg-0 col-md-4 offset-md-0 col-sm-10 offset-sm-1 col-10 offset-1 pt-5 ">
-                <img src="images/mx.png" id="mexico" style="width: 40%;" class="" alt="">
-                <h4 style="padding-top: 20px;">México <br> es el 2° mercado más grande <br> de América Latina</h4>
-              </div>
-              <div class="col-lg-4 offset-lg-0 col-md-4 offset-md-0 col-sm-10 offset-sm-1 col-10 offset-1 pt-5 ">
-                <img src="images/pib.png" style="width: 50%; height: auto;" class="" alt="">
-                <h4>La industria farmaceutica <br> representa el 1.2 % <br> del PIB nacional</h4>
-              </div>
-              <div class="col-lg-4 offset-lg-0 col-md-4 offset-md-0 col-sm-10 offset-sm-1 col-10 offset-1 pt-5 ">
-                <img src="images/PastelMercado.png" style="width: 40%;" class="" alt="">
-                <h4>ISTABILITY PHARMA <br> representa el 11% <br> del mercado nacional</h4>
-              </div>
+        <div class="col-lg-4 offset-lg-0 col-md-6 offset-md-0 col-sm-8 offset-sm-2 col-12 offset-0 pt-5">
+          <div class="card shadow-lg p-3 rounded" style="width: 18rem; margin: auto;">
+            <img src="images/bg6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-info">Informes</a>
             </div>
           </div>
-     </div>
-    </section>
-   <!-- / Sticky Banner -->
-    <!-- Contacto -->
-      <section class="Contact" id="contact">
-        <div class="container">
-          <div class="row align-items-center text-center pt-5 pb-5">
-            <div class="col">
-              <h3>Contacto</h3>
-              <p>
-                Consulte sin comprimiso, recibirá respuesta en un lapso menor a 24hrs.
-              </p>
-            </div>
-          </div>
-          <form>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <input type="email" class="form-control" maxlength="40" id="" placeholder="Correo Electrónico">
-                <div class="invalid-feedback">
-                  Por favor, ingrese una dirección de correo electrónico válida.
-                </div>
-              </div>
-              <div class="form-group col-md-6">
-                <input type="number" class="form-control" maxlength="12" id="" placeholder="Teléfono">
-                <div class="invalid-feedback">
-                  Por favor, ingrese un número de teléfono válido
-                </div>
-              </div>
-              <div class="form-group col-md-6">
-                <input type="text" class="form-control" id="" placeholder="Empresa | Organización">
-              </div>
-              <div class="form-group col-md-6">
-                <input type="text" class="form-control" id="" placeholder="Producto, servicio o consumible">
-              </div>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control text-center" id="" placeholder="Comentarios" style="height: 200px;">
-            </div>
-            <div class="text-center">
-              <button type="submit" class="btn btn-wha">Enviar</button>
-            </div>
-          </form>
         </div>
-      </section>
-    <!-- / Contacto -->
-    <!-- MAP -->
-    <iframe style="width: 100%; height: 40vh; box-sizing: content-box;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.040506988931!2d-99.07105288509294!3d19.453820286872194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fb90b1d14f9d%3A0xc8b944e1d4553e9c!2sAv.%20611%20128%2C%20San%20Juan%20de%20Arag%C3%B3n%20III%20Secc%2C%20Gustavo%20A.%20Madero%2C%2007970%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1593452602476!5m2!1ses!2smx" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    <!-- / MAP -->
-   <!-- Sticky Banner 2 -->
-   <section class="banner2" style="background-image: url('images/farma4.jpg');">
+        <div class="col-lg-4 offset-lg-0 col-md-6 offset-md-0 col-sm-8 offset-sm-2 col-12 offset-0 pt-5">
+          <div class="card shadow-lg p-3 rounded" style="width: 18rem; margin: auto;">
+            <img src="images/bg6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-info">Informes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> const desde = get_select_value("id_desde");
+  const hasta = get_select_value("id_hasta");
+  const tipo = get_select_value("id_tipo");
+  const cliente = get_select_value("id_cliente");
+  const categoria = get_select_value("id_categoria");
+  <!-- / Services -->
+  <!-- Sticky Banner -->
+  <section class="banner" style="background-image: url('images/farma6.jpg');">
+    <div class="banner--filter">
+      <div class="container">
+        <div class="row align-items-center text-center pb-4">
+          <div class="col-lg-4 offset-lg-0 col-md-4 offset-md-0 col-sm-10 offset-sm-1 col-10 offset-1 pt-5 ">
+            <img src="images/mx.png" id="mexico" style="width: 40%;" class="" alt="">
+            <h4 style="padding-top: 20px;">México <br> es el 2° mercado más grande <br> de América Latina</h4>
+          </div>
+          <div class="col-lg-4 offset-lg-0 col-md-4 offset-md-0 col-sm-10 offset-sm-1 col-10 offset-1 pt-5 ">
+            <img src="images/pib.png" style="width: 50%; height: auto;" class="" alt="">
+            <h4>La industria farmaceutica <br> representa el 1.2 % <br> del PIB nacional</h4>
+          </div>
+          <div class="col-lg-4 offset-lg-0 col-md-4 offset-md-0 col-sm-10 offset-sm-1 col-10 offset-1 pt-5 ">
+            <img src="images/PastelMercado.png" style="width: 40%;" class="" alt="">
+            <h4>ISTABILITY PHARMA <br> representa el 11% <br> del mercado nacional</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / Sticky Banner -->
+  <!-- Contacto -->
+  <section class="Contact" id="contact">
+    <div class="container">
+      <div class="row align-items-center text-center pt-5 pb-5">
+        <div class="col">
+          <h3>Contacto</h3>
+          <p>
+            Consulte sin comprimiso, recibirá respuesta en un lapso menor a 24hrs.
+          </p>
+        </div>
+      </div>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <input type="email" class="form-control" maxlength="40" id="id_email" required placeholder="Correo Electrónico">
+            <div class="invalid-feedback">
+              Por favor, ingrese una dirección de correo electrónico válida.
+            </div>
+          </div>
+          <div class="form-group col-md-6">
+            <input type="number" class="form-control" maxlength="12" id="id_number" required placeholder="Teléfono">
+            <div class="invalid-feedback">
+              Por favor, ingrese un número de teléfono válido
+            </div>
+          </div>
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control" id="id_empresa" required placeholder="Empresa | Organización">
+          </div>
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control" id="id_servicio" required placeholder="Producto, servicio o consumible">
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control text-center" id="id_comentario" required placeholder="Comentarios"
+            style="height: 200px;">
+        </div>
+        <div class="text-center">
+          <button type="submit" id="send_email" class="btn btn-wha">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- / Contacto -->
+  <!-- MAP -->
+  <iframe style="width: 100%; height: 40vh; box-sizing: content-box;"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.040506988931!2d-99.07105288509294!3d19.453820286872194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fb90b1d14f9d%3A0xc8b944e1d4553e9c!2sAv.%20611%20128%2C%20San%20Juan%20de%20Arag%C3%B3n%20III%20Secc%2C%20Gustavo%20A.%20Madero%2C%2007970%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1593452602476!5m2!1ses!2smx"
+    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  <!-- / MAP -->
+  <!-- Sticky Banner 2 -->
+  <section class="banner2" style="background-image: url('images/farma4.jpg');">
     <div class="banner--filter2">
-         <div class="container">
-           <div class="row align-items-center text-center">
-            <div class="col">
-              <p class="pb-2" style="font-style: oblique; font-weight: 600;">
-                Solicite una consulta que se ajuste a sus necesidades.
-              </p>
-              <a href="https://wa.link/a7nuq1" target="_blank"><button class="btn btn-wha">
+      <div class="container">
+        <div class="row align-items-center text-center">
+          <div class="col">
+            <p class="pb-2" style="font-style: oblique; font-weight: 600;">
+              Solicite una consulta que se ajuste a sus necesidades.
+            </p>
+            <a href="https://wa.link/a7nuq1" target="_blank"><button class="btn btn-wha">
                 COTIZA AQUÍ
               </button></a>
-              </div>
-           </div>
-         </div>
+          </div>
+        </div>
+      </div>
     </div>
-   </section>
+  </section>
   <!-- / Sticky Banner 2 -->
   <!-- footer -->
-   <footer id="footer">
+  <footer id="footer">
     <div class="container">
-       <div class="row align-items-center text-center">
-         <div class="col-md-6">
-           <p  style="border-left: 1px solid white; padding-left: 10px;">
-              Av. 611 No. 128 Col. San Juan de Aragón 3ra Secc. <br> Delegación Gustavo A. Madero C.P. 07970 CDMX
-           </p>
-           <p  style="border-left: 1px solid rgb(71, 203, 243); padding-left: 10px;">
-              Ventas: +52 771 - 128 - 4653 <br>
-           </p>
-         </div>
-         <div class="col-md-6">
-           <p  style="border-left: 1px solid rgb(92, 236, 181); padding-left: 10px;">
-             Atención al cliente: <br>
-             fmeneses@istability.com.mx
-           </p>
-           <p style="border-left: 1px solid rgb(250, 143, 143); padding-left: 10px;">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-           </p>
-         </div>
-       </div>
-       <div class="row text-center">
-         <div class="col-md-12 pt-5">
+      <div class="row align-items-center text-center">
+        <div class="col-md-6">
+          <p style="border-left: 1px solid white; padding-left: 10px;">
+            Av. 611 No. 128 Col. San Juan de Aragón 3ra Secc. <br> Delegación Gustavo A. Madero C.P. 07970 CDMX
+          </p>
+          <p style="border-left: 1px solid rgb(71, 203, 243); padding-left: 10px;">
+            Ventas: +52 771 - 128 - 4653 <br>
+          </p>
+        </div>
+        <div class="col-md-6">
+          <p style="border-left: 1px solid rgb(92, 236, 181); padding-left: 10px;">
+            Atención al cliente: <br>
+            fmeneses@istability.com.mx
+          </p>
+          <p style="border-left: 1px solid rgb(250, 143, 143); padding-left: 10px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-12 pt-5">
           ® ISTABILITY PHARMA, todos los derechos reservados.
-         </div>
-       </div>
+        </div>
+      </div>
     </div>
-   </footer>
+  </footer>
   <!-- / footer -->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const sendEmail = document.getElementById("send_email");
+
+      sendEmail.addEventListener('click', function () {
+        const email = document.getElementById("id_email").value;
+        const telefono = document.getElementById("id_number").value;
+        const empresa = document.getElementById("id_empresa").value;
+        const servicio = document.getElementById("id_servicio").value;
+        const comentario = document.getElementById("id_comentario").value;
+        Email.send({
+          SecureToken: "c1c56e67-7127-4da9-a023-94e4f9cd1c34",
+          To: 'admin@istability.com.mx',
+          From: email,
+          Subject: "Servicio, producto o consumible",
+          Body: comentario,
+        }).then(
+          message => alert(message)
+        );
+      });
+    });
+  </script>
+
+</body>
+
 </html>
