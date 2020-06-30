@@ -226,14 +226,48 @@ p,
   font-size: 20px;
 }
 
+.overlay .container,
 .overlay h1,
 .overlay p,
 .btn-discover,
 #ssvg {
-  transition: 0.6s;
-  transition-timing-function: ease-out;
-  opacity: 1;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+     -ms-animation: fadein 2s; /* Internet Explorer */
+      -o-animation: fadein 2s; /* Opera < 12.1 */
+         animation: fadein 2s;
 }
+
+@keyframes fadein {
+  from { opacity: 0; margin-top: 200px; }
+  to   { opacity: 1; margin-top: 0; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; margin-top: 200px; }
+  to   { opacity: 1; margin-top: 0; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; margin-top: 200px; }
+  to   { opacity: 1; margin-top: 0; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; margin-top: 200px; }
+  to   { opacity: 1; margin-top: 0; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from { opacity: 0; margin-top: 200px; }
+  to   { opacity: 1; margin-top: 0; }
+}
+
+
 
 @media only screen and (max-width: 1366px) and (orientation: landscape){
   #carousel img {
@@ -464,7 +498,6 @@ p,
 
   .values,
   .vbox {
-    /* height: 80%; */
     width: 80vw;
   }
 }
@@ -486,7 +519,7 @@ p,
   .values,
   .vbox {
     height: 85%;
-  } 
+  }
 }
 
 
@@ -517,7 +550,6 @@ p,
 /* --------------------------------------------------------- */
 
 .About {
-  /* height: 70vh; */
   padding-top: 80px;
 }
 
@@ -644,7 +676,6 @@ p,
 /* --------------------------------------------------------- */
 
 .banner {
-  /* background-image: url("/images/bg2.jpg"); */
   height: 350px;
   position: static;
   color: white;
@@ -654,8 +685,6 @@ p,
 }
 
 .banner--filter {
-  /* background-color: #13a0e6a4 !important; */
-  /* background-color: #0d95debb; */
   background-color: #1c9addde;
   width: 100%;
   height: 100%;
@@ -666,11 +695,6 @@ p,
   padding-top: 25px;
 }
 
-/* .banner h3 {
-  font-size: 27px !important;
-  font-weight: 399 !important;
-  text-transform: uppercase;
-} */
 
 .banner h4 {
   font-size: 18px !important;
@@ -760,7 +784,7 @@ p,
 /* --------------------------------------------------------- */
 
 #footer{
-  
+
   padding: 50px 40px;
   /* height: 30vh; */
   background-color: black;
