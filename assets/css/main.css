@@ -132,6 +132,12 @@ p,
   .btn-primary{
     width: 70% !important;
   }
+
+  .btn-wha {
+    width: 130px;
+    height: 35px;
+    font-size: 14px !important;
+  }
 }
 
 /* --------------------------------------------------------- */
@@ -648,6 +654,7 @@ p,
 #services{
   -webkit-background-clip: content-box;
   background-clip: content-box;
+  background: #f2f7f8;
 }
 
 .Services {
@@ -796,7 +803,7 @@ p,
 /* --------------------------------------------------------- */
 
 @media only screen and (max-width: 900px) and (orientation: landscape){
-  
+
   #main .carousel-inner img{
     height: 140vh;
   }
@@ -843,5 +850,12 @@ p,
   .btn-minimal2,
   .btn-minimal3{
     margin-left: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) and (orientation: landscape){
+
+  .About{
+    margin-top: 110px;
   }
 }
