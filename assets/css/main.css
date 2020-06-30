@@ -231,11 +231,11 @@ p,
 .overlay p,
 .btn-discover,
 #ssvg {
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-     -ms-animation: fadein 2s; /* Internet Explorer */
-      -o-animation: fadein 2s; /* Opera < 12.1 */
-         animation: fadein 2s;
+  -webkit-animation: fadein 2.7s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2.7s; /* Firefox < 16 */
+     -ms-animation: fadein 2.7s; /* Internet Explorer */
+      -o-animation: fadein 2.7s; /* Opera < 12.1 */
+         animation: fadein 2.7s;
 }
 
 @keyframes fadein {
@@ -795,3 +795,53 @@ p,
 /* Responsive Landscape */
 /* --------------------------------------------------------- */
 
+@media only screen and (max-width: 900px) and (orientation: landscape){
+  
+  #main .carousel-inner img{
+    height: 140vh;
+  }
+
+  #ssvg{
+    height: 100px !important;
+  }
+
+  .overlay h1{
+    font-size: 45px !important;
+  }
+
+  .overlay p{
+    font-size: 16px !important;
+  }
+
+  .container .values{
+    padding-bottom: 50px !important;
+  }
+
+  .us1{
+    height: 100%;
+  }
+
+  .values h4{
+    font-size: 20px !important;
+  }
+
+  .vbox img{
+    width: 12% !important;
+    height: auto !important;
+  }
+
+  .vbox{
+    width: 65% !important;
+    height: 100%;
+  }
+
+  .About{
+    margin-top: 80px;
+  }
+
+  .btn-minimal1,
+  .btn-minimal2,
+  .btn-minimal3{
+    margin-left: 20px !important;
+  }
+}
