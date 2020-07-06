@@ -1,11 +1,18 @@
-html {
-    overflow-x: hidden;
-}
-
 html,
 body,
 .container {
     height: 100%;
+}
+
+#main,
+#about,
+#services,
+#contact {
+    overflow: auto !important;
+}
+
+body {
+    padding-top: 80px !important;
 }
 
 body,
@@ -237,13 +244,75 @@ p,
     font-size: 65px !important;
 }
 
-.overlay p {
+#cont2 {
+    height: 40px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+#moveOn {
+    font-family: "Roboto", sans-serif !important;
+    list-style: none;
+    height: 30px;
+    /* overflow: hidden; */
+    animation: cambiar 10s infinite !important;
+    line-height: 35px;
     font-size: 20px;
+}
+
+@keyframes cambiar {
+    0% {
+        /* margin-top: 0px; */
+        transform: translate(0, -20px);
+        opacity: 1;
+    }
+    25% {
+        /* margin-top: 0px; */
+        transform: translate(0, -20px);
+        opacity: 1;
+    }
+    25% {
+        /* margin-top: -40px; */
+        transform: translate(0, -20px);
+        opacity: 1;
+    }
+    50% {
+        /* margin-top: -40px; */
+        transform: translate(0, -20px);
+        opacity: 1;
+    }
+    50% {
+        /* margin-top: -80px; */
+        transform: translate(0, -55px);
+        opacity: 1;
+    }
+    80% {
+        /* margin-top: -80px; */
+        transform: translate(0, -55px);
+        opacity: 1;
+    }
+    80% {
+        /* margin-top: -40px; */
+        transform: translate(0, -89px);
+    }
+    83% {
+        opacity: 0;
+    }
+    100% {
+        /* margin-top: -40px; */
+        transform: translate(0, -89px);
+        opacity: 1;
+    }
+    100% {
+        /* margin-top: 0; */
+        transform: translate(0, -20px);
+        /* opacity: 0; */
+    }
 }
 
 .overlay .container,
 .overlay h1,
-.overlay p,
+#moveOn,
 .btn-discover,
 #ssvg {
     -webkit-animation: fadein 2.7s;
@@ -340,11 +409,63 @@ p,
     #carousel .carousel-inner img {
         height: 80vh;
     }
+    #ssvg {
+        margin-top: 100px !important;
+    }
     .overlay h1 {
         font-size: 33px !important;
     }
-    .overlay p {
-        font-size: 15px !important;
+    #moveOn {
+        font-size: 16px !important;
+    }
+    @keyframes cambiar {
+        0% {
+            /* margin-top: 0px; */
+            transform: translate(0, 0px);
+            opacity: 1;
+        }
+        25% {
+            /* margin-top: 0px; */
+            transform: translate(0, 0px);
+            opacity: 1;
+        }
+        25% {
+            /* margin-top: -40px; */
+            transform: translate(0, 0px);
+            opacity: 1;
+        }
+        50% {
+            /* margin-top: -40px; */
+            transform: translate(0, -10px);
+            opacity: 1;
+        }
+        50% {
+            /* margin-top: -80px; */
+            transform: translate(0, -45px);
+            opacity: 1;
+        }
+        80% {
+            /* margin-top: -80px; */
+            transform: translate(0, -45px);
+            opacity: 1;
+        }
+        80% {
+            /* margin-top: -40px; */
+            transform: translate(0, -75px);
+        }
+        83% {
+            opacity: 0;
+        }
+        100% {
+            /* margin-top: -40px; */
+            transform: translate(0, -75px);
+            opacity: 1;
+        }
+        100% {
+            /* margin-top: 0; */
+            transform: translate(0, 0px);
+            /* opacity: 0; */
+        }
     }
     .btn-discover {
         font-size: 18px !important;
@@ -862,7 +983,7 @@ p,
     .overlay h1 {
         font-size: 45px !important;
     }
-    .overlay p {
+    #moveOn {
         font-size: 16px !important;
     }
     .container .values {
